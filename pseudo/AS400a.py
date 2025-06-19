@@ -62,10 +62,10 @@ as400_style = """
 st.markdown(as400_style, unsafe_allow_html=True)
 
 # Load CSVs
-df_customer = pd.read_csv("Customer_names.csv")
+df_customer = pd.read_csv("/workspaces/pseudo/Customer_names.csv")
 df_customer.columns = df_customer.columns.str.lower()
 
-df_rm = pd.read_csv("Customer_RM.csv")
+df_rm = pd.read_csv("/workspaces/pseudo/Customer_RM.csv")
 df_rm.columns = df_rm.columns.str.strip().str.lower().str.replace(' ', '_')
 
 # Initialize session state variables
